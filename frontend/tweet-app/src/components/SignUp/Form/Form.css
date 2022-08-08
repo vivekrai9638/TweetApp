@@ -1,0 +1,47 @@
+.form {
+    /* margin-top: 5rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.form >  input {
+    all: unset;
+    border:2px solid #CFD9DE;
+    width: 70%;
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 50px;
+    font-size: 17px;
+}
+
+.form > input:focus {
+    border-color: #51b2f3 ;
+}
+
+.form > input[type="submit"] {
+    height: auto;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 100px;
+    background-color: #878a87;
+    color: #f4f5f5;
+    font-weight: 700;
+}
+
+/* To hide arrows of number input */
+.form > input[type="number"]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.form > input[type="submit"]:hover {
+    background-color: #000;
+    cursor: pointer;
+}

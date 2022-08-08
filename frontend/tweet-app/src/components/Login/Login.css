@@ -1,0 +1,98 @@
+.login {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.login__banner {
+    flex: .6;
+    position: relative;
+}
+
+.login__banner > .MuiSvgIcon-root {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 420px;
+    color: #fff;
+}
+.login__banner > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login__main {
+    flex: .4;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px;
+    /* justify-content: space-between; */
+    gap: 60px;
+}
+
+.login__main--error {
+    height: 20px;
+    color: red;
+    font-weight: 700;
+}
+
+.login__main > .MuiSvgIcon-root {
+    color: var(--twitter-color);
+    font-size:60px ;
+}
+
+.login__main > h1 {
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.login__main--form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login__main--form > input {
+    all: unset;
+    border:2px solid #CFD9DE;
+    width: 70%;
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 50px;
+    font-size: 17px;
+    
+}
+
+.login__main--form > input:focus {
+    border-color:var(--twitter-color) ;  
+}
+
+.login__main--form > input[type="submit"] {
+    height: auto;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 100px;
+    color: var(--twitter-color);
+    font-weight: 700;
+}
+
+.login__main--form > input[type="submit"]:hover {
+    background-color: var(--twitter-background);
+    cursor: pointer;
+}
+
+.login__main--signup {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+}
+
+.login__main--signup > a {
+    font-weight: 600;
+    color: var(--twitter-color);
+    cursor: pointer;
+}

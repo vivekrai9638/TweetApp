@@ -1,0 +1,33 @@
+.feed {
+    flex: 0.5;
+    border-right: 3px solid var(--twitter-background);
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+}
+
+/* to hide the scrollbar */
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
+.feed {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.feed__head {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 3px solid var(--twitter-background);
+}
+
+.feed__head > .MuiSvgIcon-root {
+    color: var(--twitter-color);
+    transform: rotate(180deg);
+    font-size: 25px;
+}

@@ -1,0 +1,47 @@
+.signUp__background{
+    background-color: #999;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUp {
+    width: 40vw;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.signUp__head{
+    margin-bottom: 30px;
+    font-size: larger;
+}
+
+.signUp__head > h1 {
+    margin-left: 13%;
+    width: fit-content;
+}
+
+.signUp__form {
+    width: 100%;
+    height: 100%;
+}
+
+.signUp__login {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 13%;
+}
+
+.signUp__login > a {
+    color: var(--twitter-color);
+    text-decoration: underline;
+    font-weight: 600;
+}
